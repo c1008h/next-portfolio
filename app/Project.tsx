@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import { ButtonTemplate } from '@/components'
+import { ButtonTemplate, CardTemplate } from '@/components'
+import projectData from '@/constants/projectData.json'
 
 export default function Project() {
     const [activeTab, setActiveTab] = useState('Web Development');
@@ -16,7 +17,7 @@ export default function Project() {
         <div className='flex flex-col w-screen h-screen items-center p-5'>
             <h1>My Latest Projects</h1>
             <div className='w-3/4 flex flex-row justify-evenly m-5'>
-                {['Web Development', 'Mobile', 'Desktop', 'All'].map((title) => (
+                {['Web', 'Mobile', 'Desktop', 'All'].map((title) => (
                     <ButtonTemplate 
                         key={title}
                         title={title} 
@@ -25,6 +26,16 @@ export default function Project() {
                     />
                 ))}
             </div>
+            {projectData.map((project, index) => (
+                <CardTemplate 
+                    key={index}
+                    // title={project.title}
+                    // subtitle={project.subtitle}
+                    // description={project.description}
+                    isReversed={index % 2 !== 0}
+                    {...project}
+                />
+            ))}
         </div>
     )
 }
