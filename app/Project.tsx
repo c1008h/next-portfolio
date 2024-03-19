@@ -7,20 +7,20 @@ import { ProjectProps } from '@/interface/ProjectProps'
 export default function Project() {
     const [activeTab, setActiveTab] = useState<string>('Web');
     const [displayProjects, setDisplayProjects] = useState<ProjectProps[]>([]);
+    const [isViewMoreClicked, setIsViewMoreClicked] = useState<boolean>(false);
+
     const initialDisplayCount = 3;
 
     useEffect(() => {
-        console.log('projects data', projectData)
-        const projectsToShow = projectData
-        .filter(project => activeTab === 'All' || project.type === activeTab)
-        .slice(0, displayProjects.length > initialDisplayCount ? projectData.length : initialDisplayCount);
-    
-        console.log('projects to show', projectsToShow)
+        setIsViewMoreClicked(false);
+
+        const filteredProjects = projectData.filter(project => project.type.toLowerCase() === activeTab.toLowerCase());
+        const projectsToShow = isViewMoreClicked ? filteredProjects : filteredProjects.slice(0, initialDisplayCount);
+        
         setDisplayProjects(projectsToShow);
+    }, [activeTab, isViewMoreClicked]); 
 
-    }, [activeTab, displayProjects.length]);
-
-    const handleViewMore = () => setDisplayProjects(projectData.filter(project => activeTab === 'All' || project.type === activeTab));
+    const handleViewMore = () => setIsViewMoreClicked(true);
 
     const btnBaseStyle = 'border px-4 py-2 text-sm font-medium leading-5 transition-colors duration-150 rounded-lg focus:outline-none';
     const btnActiveStyle = 'border-blue-500 text-blue-700 bg-blue-100';
@@ -28,7 +28,6 @@ export default function Project() {
 
     const getBtnStyle = (title: string) => `${btnBaseStyle} ${activeTab === title ? btnActiveStyle : btnInactiveStyle}`;
 
-    console.log('display projects:', displayProjects)
     return (
         <div className='flex flex-col w-screen h-screen items-center p-5'>
             <h1>My Latest Projects</h1>
