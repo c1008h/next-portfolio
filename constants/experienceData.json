@@ -2,39 +2,68 @@
     {
         "id": 11,
         "year": "2024",
-        "yearRange": "2024-Present",
+        "yearRange": "2024 - Present",
         "name": "Full Stack Engineer",
         "institute": "Self Employed",
-        "description": "Collaborate with clients to design, develop, and deploy web applications. Proficient in HTML, CSS, JavaScript, Node.js, Express.js, and integrating APIs. Successfully completed multiple projects, ensuring client satisfaction."
+        "description": "Collaborate with clients to design, develop, and deploy web applications. Proficient in HTML, CSS, JavaScript, Node.js, Express.js, and integrating APIs. Successfully completed multiple projects, ensuring client satisfaction.",
+        "skills": [
+            "React Native", 
+            "React", 
+            "Next", 
+            "Node", 
+            "JavaScript", 
+            "TypeScript"
+        ]
     },
     {
         "id": 10,
         "year": "2024",
-        "yearRange": "2023-Present",
+        "yearRange": "2023 - Present",
         "name": "Software Engineer",
         "institute": "Reflectica AI",
-        "description": "Lead developer, enhancing psychotherapy platform with React Native and Firebase. Developed full-stack web app with Node.js, RESTful APIs, and Redux. Managed product lifecycle and maintained high-quality standards."
+        "description": "Lead developer, enhancing psychotherapy platform with React Native and Firebase. Developed full-stack web app with Node.js, RESTful APIs, and Redux. Managed product lifecycle and maintained high-quality standards.",
+        "skills": [
+            "React Native",
+            "React", 
+            "Firebase", 
+            "Node", 
+            "JavaScript", 
+            "Express",
+            "Figma"
+        ]
     },
     {
         "id": 9,
         "year": "2023",
-        "yearRange": "2023-2024",
+        "yearRange": "2023 - 2023",
         "name": "Software Engineer Intern",
         "institute": "Reflectica AI",
-        "description": "Contributed to development, testing, and troubleshooting of Reflectica AI's psychotherapy platform. Collaborated with engineering team, ensuring platform stability."
+        "description": "Contributed to development, testing, and troubleshooting of Reflectica AI's psychotherapy platform. Collaborated with engineering team, ensuring platform stability.",
+        "skills": ["React Native", "React", "Firebase", "Node", "JavaScript"]
     },
     {
         "id": 8,
         "year": "2023",
-        "yearRange": "2023-Present",
+        "yearRange": "2023 - Present",
         "name": "Coding Instructor",
         "institute": "CodeRev Kids",
-        "description": "Taught programming fundamentals and video game development to students. Introduced hands-on learning with Arduino for Snap Circuits Engineering, enhancing students' coding proficiency."
+        "description": "Taught programming fundamentals and video game development to students. Introduced hands-on learning with Arduino for Snap Circuits Engineering, enhancing students' coding proficiency.",
+        "skills": ["Arduino", "Scratch"]
+
+    },
+    {
+        "id": 7,
+        "year":"2023",
+        "yearRange": "2023 - 2024",
+        "name": "Learning Assistant",
+        "institute": "edX",
+        "description": "Provided exceptional support to students in various programming languages and concepts. Fostered collaborative learning environment and adapted teaching methods to meet student needs. Built trust and engagement in virtual learning community.",
+        "skills": ["React", "MongoDB", "MySQL", "JavaScript", "NoSQL", "GraphQL", "jQuery", "Express", "Heroku", "Netlify", "Git"]
     },
     {
         "id": 6,
         "year": "2023",
-        "yearRange": "2023-Present",
+        "yearRange": "2023 - Present",
         "name": "Founder and Administrator",
         "institute": "Programming Accountability Group",
         "description": "Founded programming accountability group, organized meetings, set goals, and developed leadership and collaboration skills."
@@ -42,25 +71,30 @@
     {
         "id": 5,
         "year": "2023",
-        "yearRange": "2023-2023",
+        "yearRange": "2023 - 2023",
         "name": "Hackathon Participant",
         "institute": "Bay Area Hacks 23",
-        "description": "Developed MERN application with GraphQL and Material UI for the hackathon. Managed frontend and backend using React, Express, Node, and MongoDB."
+        "description": "Developed MERN application with GraphQL and Material UI for the hackathon. Managed frontend and backend using React, Express, Node, and MongoDB.",
+        "skills": ["React", "MongoDB", "Node", "JavaScript", "GraphQL", "Express", "API"]
+
     },
     {
         "id": 3,
         "year": "2022",
-        "yearRange": "2022-2022",
+        "yearRange": "2022 - 2022",
         "name": "Fullstack Coding Bootcamp",
         "institute": "University of Washington",
-        "description": "Completed 24-week full-stack coding bootcamp. Proficient in HTML, CSS, JavaScript, Git, and Agile methodology. Developed skills in server-side APIs, OOP, SQL, and React."
+        "description": "Completed 24-week full-stack coding bootcamp. Proficient in HTML, CSS, JavaScript, Git, and Agile methodology. Developed skills in server-side APIs, OOP, SQL, and React.",
+        "skills": ["React", "MongoDB", "MySQL", "JavaScript", "NoSQL", "GraphQL", "jQuery", "Express"]
     },
     {
         "id": 1,
         "year": "2020",
-        "yearRange": "2016-2020",
+        "yearRange": "2016 - 2020",
         "name": "Bachelor's Degree",
         "institute": "University of Washington",
-        "description": "BA in Anthropology. Developed interest in informatics and technology, alongside skills in critical thinking and analysis."
+        "description": "BA in Anthropology. Developed interest in informatics and technology, alongside skills in critical thinking and analysis.",
+        "skills": ["HTML", "CSS", "SQL", "Git"]
+
     }  
 ]

@@ -6,7 +6,7 @@ export default function Experience() {
     return (
         <div className='flex flex-col w-screen justify-center items-center mt-10 p-5'>
             <h1>Work</h1>
-            <div>
+            <div className='flex flex-col w-4/5'>
                 {experienceData.map((experience) => (
                     <SectionTemplate
                         key={experience.id} 
