@@ -27,7 +27,7 @@ export default function Project() {
     const getBtnStyle = (title: string) => `${btnBaseStyle} ${activeTab === title ? btnActiveStyle : btnInactiveStyle}`;
 
     return (
-        <div className='flex flex-col w-screen h-screen items-center p-5'>
+        <div className='flex flex-col w-screen items-center p-5'>
             <h1>My Latest Projects</h1>
             <div className='w-3/4 flex flex-row justify-evenly m-5'>
                 {['Web', 'Mobile', 'Desktop', 'All'].map((title) => (

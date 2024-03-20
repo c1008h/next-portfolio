@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Navbar, Footer } from "@/components";
 import Landing from "./Landing";
 import Project from "./Project";
+import Experience from "./Experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Landing />
       <Navbar/>
       <Project />
+      <Experience />
     </main>
   );
 }
