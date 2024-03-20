@@ -4,6 +4,7 @@ import { Navbar, Footer } from "@/components";
 import Landing from "./Landing";
 import Project from "./Project";
 import Experience from "./Experience";
+import Contact from './Contact';
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Navbar/>
       <Project />
       <Experience />
+      <Contact />
+      <Footer />
     </main>
   );
 }

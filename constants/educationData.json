@@ -1,0 +1,29 @@
+[
+    {
+        "id": 2,
+        "year": "2022",
+        "yearRange": "2022 - 2022",
+        "roles": [
+            {
+                "title": "Fullstack Coding Bootcamp",
+                "description": "Completed 24-week full-stack coding bootcamp. Proficient in HTML, CSS, JavaScript, Git, and Agile methodology. Developed skills in server-side APIs, OOP, SQL, and React."
+            }
+        ],
+        "name": "University of Washington",
+        "skills": ["React", "MongoDB", "MySQL", "JavaScript", "NoSQL", "GraphQL", "jQuery", "Express"]
+    },
+    {
+        "id": 1,
+        "year": "2020",
+        "yearRange": "2016 - 2020",
+        "roles": [
+           {
+            "title": "Bachelor's Degree",
+            "description": "BA in Anthropology. Developed interest in informatics and technology, alongside skills in critical thinking and analysis."
+
+            }
+        ],
+        "name": "University of Washington",
+        "skills": ["HTML", "CSS", "SQL", "Git"]
+    }  
+]

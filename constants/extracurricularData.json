@@ -1,0 +1,27 @@
+[
+    {
+        "id": 2,
+        "year": "2023",
+        "yearRange": "2023 - Present",
+        "roles": [
+            {
+                "title": "Founder and Administrator",
+                "description": "Founded programming accountability group, organized meetings, set goals, and developed leadership and collaboration skills."
+            }
+        ],
+        "name": "Programming Accountability Group"
+    },
+    {
+        "id": 1,
+        "year": "2023",
+        "yearRange": "2023 - 2023",
+        "roles": [
+            {
+                "title": "Hackathon Participant",
+                "description": "Developed MERN application with GraphQL and Material UI for the hackathon. Managed frontend and backend using React, Express, Node, and MongoDB."
+            }
+        ],
+        "name": "Bay Area Hacks 23",
+        "skills": ["React", "MongoDB", "Node", "JavaScript", "GraphQL", "Express", "API"]
+    }
+]
