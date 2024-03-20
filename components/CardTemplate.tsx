@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { ButtonTemplate } from '@/components'
+import Image from "next/image";
 
 interface CardTemplateProps {
+    id: number;
     title: string;
     subtitle: string;
     description: string;
@@ -10,12 +12,11 @@ interface CardTemplateProps {
     link: string;
     demo: string;
     type: string;
-    key: number;
     isReversed?: boolean;
 }
 
 export default function CardTemplate({
-    key, isReversed, ...project
+    isReversed, ...project
 }: CardTemplateProps) {
     const [showFullDescription, setShowFullDescription] = useState(false);
     
@@ -35,8 +36,14 @@ export default function CardTemplate({
     }`;
     
     return (
-        <div className={containerClasses} key={key}>
-            <img src={project.image} alt={`${project.title} project thumbnail`} className={imageClasses}/>
+        <div className={containerClasses} key={project.id}>
+            <Image 
+                src={project.image} 
+                alt={`${project.title} project thumbnail`} 
+                className={imageClasses}
+                width={500}
+                height={300}
+            />
             <div className='p-6 flex flex-col justify-between'>
                 <div>
                     <h1 className='font-bold text-xl text-gray-800 mb-2'>{project.title} - <span className='font-medium text-lg text-gray-600'>{project.subtitle}</span></h1>
