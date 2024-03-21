@@ -5,6 +5,18 @@ import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt, FaGlobe } from 'react-icons/fa';
 
 export default function Projects() {
+
+  const sortedProjects = projectData.sort((a, b) => {
+    // Move projects without a year to the end
+    if (!a.year) return 1;
+    if (!b.year) return -1;
+    // In progress projects first
+    if (a.year === 'In-Progress') return -1;
+    if (b.year === 'In-Progress') return 1;
+    // Sort by year (descending)
+    return parseInt(b.year) - parseInt(a.year);
+  });
+
   return (
     <div className="py-12 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +43,7 @@ export default function Projects() {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {projectData.map((project) => (
+            {sortedProjects.map((project) => (
               <tr key={project.id}>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{project.year}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{project.title}</td>
