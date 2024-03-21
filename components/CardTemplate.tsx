@@ -8,9 +8,9 @@ interface CardTemplateProps {
     subtitle: string;
     description: string;
     image: string;
-    github: string;
-    link: string;
-    demo: string;
+    github?: string;
+    link?: string;
+    demo?: string;
     type: string;
     isReversed?: boolean;
 }
