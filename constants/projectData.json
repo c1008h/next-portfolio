@@ -9,7 +9,9 @@
         "github":"https://github.com/davidpascual2/Project-2",
         "link": "https://ancient-scrubland-48723.herokuapp.com/",
         "demo":"/demo/doghub.gif",
-        "type":"web"
+        "type":"web",
+        "madeAt": "University of Washington",
+        "year":"2022"
     },
     {
         "id": 2,
@@ -21,7 +23,9 @@
         "github":"https://github.com/c1008h/Pefi",
         "link": "https://pefi.netlify.app",
         "demo": "/demo/PeFi.gif",
-        "type":"web"
+        "type":"web",
+        "year":"2023"
+
     },
     {
         "id": 3,
@@ -33,7 +37,9 @@
         "github":"https://github.com/c1008h/FoodGenie",
         "link": "https://thefoodgenie.netlify.app",
         "demo": "/demo/FoodGenie.gif",
-        "type":"web"
+        "type":"web",
+        "year":"2022"
+
     },
     {
         "id": 4,
@@ -44,7 +50,9 @@
         "image": "/images/ecombackend.png",
         "github": "https://github.com/c1008h/E-Commerce-Backend",
         "demo": "/demo/ecombackend.gif",
-        "type":"web"
+        "type":"web",
+        "madeAt": "University of Washington",
+        "year":"2022"
     },
     {
         "id": 5,
@@ -56,6 +64,8 @@
         "github": "https://github.com/c1008h/Snake-Game",
         "link": "https://c1008h.github.io/Snake-Game/",
         "demo": "/demo/SnakeGame.gif",
-        "type":"web"
+        "type":"web",
+        "year":"2023"
+
     }
 ]

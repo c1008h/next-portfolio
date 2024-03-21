@@ -54,7 +54,8 @@ export default function CardTemplate({
                             btnStyle='text-blue-500 hover:text-blue-600 transition-colors'
                             title={showFullDescription ? 'View Less' : 'View More'}
                         />
-                    )}                </div>
+                    )}                
+                </div>
                 <div className='flex flex-wrap justify-start items-center gap-2'>
                     {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer" className='inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors'>View on GitHub</a>}
                     {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer" className='inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors'>Visit Website</a>}

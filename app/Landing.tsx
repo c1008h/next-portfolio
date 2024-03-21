@@ -17,8 +17,6 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
   />
 </div> */}
   return (
-
-
     <div 
       ref={ref}
       className="flex flex-col items-center justify-center w-screen h-screen bg-cover bg-center text-center"

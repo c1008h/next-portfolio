@@ -4,12 +4,14 @@ import { ButtonTemplate, CardTemplate } from '@/components'
 import projectData from '@/constants/projectData.json'
 import { ProjectProps } from '@/interface/ProjectProps'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function Project() {
     const [activeTab, setActiveTab] = useState<string>('Web');
     const [filteredProjects, setFilteredProjects] = useState<ProjectProps[]>([]);
     const [isViewMoreClicked, setIsViewMoreClicked] = useState<boolean>(false);
     const displayCount = activeTab === 'All' ? filteredProjects.length : (isViewMoreClicked ? filteredProjects.length : 3);
+    const router = useRouter();
 
     useEffect(() => {
         const newFilteredProjects = activeTab === 'All'
@@ -27,17 +29,24 @@ export default function Project() {
 
     const getBtnStyle = (title: string) => `${btnBaseStyle} ${activeTab === title ? btnActiveStyle : btnInactiveStyle}`;
 
+    const handleTabClick = (title: string) => {
+        if (title === 'All') {
+            router.push('/projects');
+        } else {
+            setActiveTab(title)
+        }
+    }
     return (
         <div className='flex flex-col items-center py-16' id='projects'>
             <h1 className="text-4xl font-bold text-gray-800 mb-8">
-                My Latest Projects
+                My Projects
             </h1>            
             <div className='w-3/4 flex flex-row justify-evenly m-5'>
                 {['Web', 'Mobile', 'Desktop', 'All'].map((title) => (
                     <ButtonTemplate 
                         key={title}
                         title={title} 
-                        action={() => setActiveTab(title)}
+                        action={() => handleTabClick(title)}
                         btnStyle={getBtnStyle(title)} 
                     />
                 ))}
