@@ -49,7 +49,7 @@ export default function Projects() {
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{project.title}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{project.madeAt}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{project.subtitle}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm flex flex-row">
+                <td className="px-6 py-4 whitespace-nowrap text-sm flex flex-row space-x-4">
                   {project.github && 
                     <a href={project.github} className="text-blue-500 hover:text-blue-600" aria-label="GitHub">
                       <FaGithub size={20} />

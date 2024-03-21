@@ -1,6 +1,6 @@
 [        
     {
-        "id": 8,
+        "id": 10,
         "title": "The Lounge",
         "subtitle": "Next, Firebase, Node, SocketIO",
         "description": "",
@@ -9,14 +9,14 @@
         "github":"",
         "link": "",
         "demo":"",
-        "type":"mobile",
+        "type":"web",
         "madeAt": "—",
         "year":"In-Progress"
     },
     {
-        "id": 7,
+        "id": 9,
         "title": "Untitled Messaging Service",
-        "subtitle": "React Native, Firebase, Node, AWS, openAI, JavaScript, SocketIO",
+        "subtitle": "React Native, Firebase, Node, AWS, openAI, JavaScript, SocketIO, Figma",
         "description": "",
         "image": "",
         "website": "",
@@ -28,9 +28,9 @@
         "year":"In-Progress"
     },
     {
-        "id": 6,
+        "id": 8,
         "title": "WalletWize",
-        "subtitle": "React Native, TypeScript, APIs",
+        "subtitle": "React Native, TypeScript, APIs, Figma",
         "description": "",
         "image": "",
         "website": "",
@@ -42,9 +42,9 @@
         "year":"2024"
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "Reflectica",
-        "subtitle": "React Native, Node, JavaScript",
+        "subtitle": "React Native, Node, JavaScript, Figma",
         "description": "",
         "image": "",
         "website": "https://www.linkedin.com/company/reflecticaai/about/",
@@ -56,21 +56,7 @@
         "year":"In-Progress"
     },
     {
-        "id": 5,
-        "title": "DogHub",
-        "subtitle": "Express, Handlebars, MySQL, and MVC model",
-        "description":
-        "The app allows users to create a profile for their dog, including information about their breed and age. Using this information, the users will be able to swipe and match with other dogs based on their description. Users are able to message their matches to set up playdates.",
-        "image": "/images/doghub.png",
-        "github":"https://github.com/davidpascual2/Project-2",
-        "link": "https://ancient-scrubland-48723.herokuapp.com/",
-        "demo":"/demo/doghub.gif",
-        "type":"web",
-        "madeAt": "University of Washington",
-        "year":"2022"
-    },
-    {
-        "id": 4,
+        "id": 6,
         "title": "Pefi",
         "subtitle": "MongoDB, Express, React, Node.Js, GraphQL",
         "description":
@@ -84,7 +70,7 @@
         "madeAt":"—"
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Food Genie",
         "subtitle": "MongoDB, Express, React, Node.Js, GraphQL",
         "description":
@@ -97,6 +83,34 @@
         "year":"2022",
         "madeAt":"—"
 
+    },
+    {
+        "id": 4,
+        "title": "Chris Hong Portfolio",
+        "subtitle": "React, JavaScript, Bootstrap",
+        "description": "",
+        "image": "",
+        "github":"",
+        "link": "",
+        "demo": "",
+        "type":"web",
+        "year":"2023",
+        "madeAt":"—"
+
+    },
+    {
+        "id": 3,
+        "title": "DogHub",
+        "subtitle": "Express, Handlebars, MySQL, and MVC model",
+        "description":
+        "The app allows users to create a profile for their dog, including information about their breed and age. Using this information, the users will be able to swipe and match with other dogs based on their description. Users are able to message their matches to set up playdates.",
+        "image": "/images/doghub.png",
+        "github":"https://github.com/davidpascual2/Project-2",
+        "link": "https://ancient-scrubland-48723.herokuapp.com/",
+        "demo":"/demo/doghub.gif",
+        "type":"web",
+        "madeAt": "University of Washington",
+        "year":"2022"
     },
     {
         "id": 2,
