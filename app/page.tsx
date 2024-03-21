@@ -13,20 +13,22 @@ export default function Home() {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
   useEffect(() => {
+    const currentRef = landingRef.current;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setShowSidebar(!entry.isIntersecting);
       },
-      { threshold: 0.1 } 
+      { threshold: 0.1 }
     );
 
-    if (landingRef.current) {
-      observer.observe(landingRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (landingRef.current) {
-        observer.unobserve(landingRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
