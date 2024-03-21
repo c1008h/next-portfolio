@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-5">
+    <div className="max-w-4xl mx-auto mt-10 p-5" id='about'>
       <h2 className="text-3xl font-bold text-center">About Me</h2>
       <p className="mt-5 text-lg text-gray-700">
         Hello! I'm Chris Hong, a software engineer based in Seattle, WA. I have a passion for developing scalable web applications and improving user experiences. With a background in [Your Background], I've found a love for coding and the creative problem-solving it entails.
