@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Footer, Sidebar } from "@/components";
 import Landing from "./Landing";
 import About from "./About";
+import Current from './Current';
 import Project from "./Project";
 import Experience from "./Experience";
 import Contact from './Contact';
@@ -35,6 +36,7 @@ export default function Home() {
       <Landing ref={landingRef} />
       <Navbar/>
       <About />
+      <Current />
       <Project />
       <Experience />
       <Contact />

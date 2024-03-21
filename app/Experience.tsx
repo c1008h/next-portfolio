@@ -13,8 +13,8 @@ export default function Experience() {
     const handleShowEducation = () => setShowEducation(!showEducation)
 
     return (
-        <div className='flex flex-col w-screen justify-center items-center p-5 bg-gray-50' id='experience'>
-            <h1 className='text-3xl font-bold text-gray-800 mb-4'>Work Experiences</h1>
+        <div className='flex flex-col items-center py-16 bg-gray-50' id='experience'>
+            <h1 className='text-4xl font-bold text-gray-800 mb-8'>Work Experiences</h1>
             <div className='flex flex-col w-4/5 mb-4'>
                 {experienceData.map((experience) => (
                     <SectionTemplate
