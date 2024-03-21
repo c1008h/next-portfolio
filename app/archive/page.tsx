@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import projectData from '@/constants/projectData.json'
 import Link from 'next/link';
+import { FaGithub, FaExternalLinkAlt, FaGlobe } from 'react-icons/fa';
 
 export default function Projects() {
   return (
@@ -36,9 +37,22 @@ export default function Projects() {
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{project.title}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{project.madeAt}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{project.subtitle}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm">
-                  {project.github && <a href={project.github} className="text-blue-500 hover:text-blue-600">View Project</a>}
-                  {project.link && <a href={project.link} className="text-blue-500 hover:text-blue-600">View Project</a>}
+                <td className="px-6 py-4 whitespace-nowrap text-sm flex flex-row">
+                  {project.github && 
+                    <a href={project.github} className="text-blue-500 hover:text-blue-600" aria-label="GitHub">
+                      <FaGithub size={20} />
+                    </a>
+                  }
+                  {project.link && 
+                    <a href={project.link} className="text-blue-500 hover:text-blue-600" aria-label="Deployed Link">
+                      <FaExternalLinkAlt size={20} />
+                    </a>
+                  }
+                  {project.website && 
+                    <a href={project.website} className="text-blue-500 hover:text-blue-600" aria-label="Website Link">
+                      <FaGlobe size={20} />
+                    </a>
+                  }
                 </td>
               </tr>
             ))}

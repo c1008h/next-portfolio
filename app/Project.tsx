@@ -31,7 +31,7 @@ export default function Project() {
 
     const handleTabClick = (title: string) => {
         if (title === 'All') {
-            router.push('/projects');
+            router.push('/archive');
         } else {
             setActiveTab(title)
         }
