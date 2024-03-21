@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { ButtonTemplate, CardTemplate } from '@/components'
 import projectData from '@/constants/projectData.json'
 import { ProjectProps } from '@/interface/ProjectProps'
+import Link from 'next/link';
 
 export default function Project() {
     const [activeTab, setActiveTab] = useState<string>('Web');

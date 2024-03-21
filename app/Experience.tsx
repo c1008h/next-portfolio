@@ -3,6 +3,7 @@ import experienceData from '@/constants/experienceData.json'
 import extracurricularData from '@/constants/extracurricularData.json'
 import educationData from '@/constants/educationData.json'
 import { ButtonTemplate, SectionTemplate } from '@/components'
+import Link from 'next/link';
 
 export default function Experience() {
     const [showOther, setShowOther] = useState<boolean>(false)

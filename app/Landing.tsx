@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-export default function Landing() {
-      // import Image from 'next/image';
+interface LandingProps {
+}
+
+const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
+  // import Image from 'next/image';
 
 // Inside your CardTemplate component
 {/* <div className={imageClasses} style={{ position: 'relative' }}>
@@ -15,9 +18,16 @@ export default function Landing() {
   return (
 
 
-    <div className='flex flex-col w-screen h-screen justify-center items-center content-center self-center'>
+    <div 
+      ref={ref}
+      className='flex flex-col w-screen h-screen justify-center items-center content-center self-center'
+    >
         <h1>Chris Hong</h1>
         <p>Full Stack Developer / Software Developer</p>
     </div>
   )
-}
+})
+
+Landing.displayName = 'Landing';
+
+export default Landing;
