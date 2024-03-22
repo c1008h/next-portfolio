@@ -16,15 +16,11 @@ export default function Projects() {
     return parseInt(b.year) - parseInt(a.year);
   });
 
-  const handleBack = () => {
-    router.push('/');
-  }
-
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className='flex flex-row justify-items-start' >
-          <ButtonTemplate title={'<'} action={() => handleBack()} btnStyle={'font-bold text-3xl text-left'} />
+          <ButtonTemplate title={'<'} action={() => router.back()} btnStyle={'font-bold text-3xl text-left'} />
           <h2 className="text-3xl font-bold text-left text-gray-800 mb-12">Archive</h2>
         </div>
         <div className="min-w-full align-middle">

@@ -43,6 +43,7 @@ export default function CardTemplate({
                 className={imageClasses}
                 width={500}
                 height={300}
+                fill={false}
             />
             <div className='p-6 flex flex-col justify-between'>
                 <div>
