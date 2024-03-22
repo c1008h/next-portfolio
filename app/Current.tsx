@@ -6,12 +6,9 @@ export default function Current() {
   const [currentProject, setCurrentProject] = useState<string>('');
 
   const handleOpenModal = (projectName: string) => {
-    console.log('module is opening')
     setCurrentProject(projectName);
     setIsModalOpen(true);
   };
-
-  const handleCloseModal = () => setIsModalOpen(false);
   
   return (
     <div id="current-projects" className="py-12 bg-white">
@@ -50,22 +47,22 @@ export default function Current() {
         </div>
 
         {isModalOpen && (
-          <ModalTemplate onClose={() => setIsModalOpen(false)} label={currentProject} visible={isModalOpen}>
-            {/* Content based on currentProject */}
-            {currentProject === 'The Lounge' && (
-              <p>
-                My current endeavor, The Lounge, focuses intensively on harnessing the power of Next.js, TypeScript, and Socket.IO to redefine the landscape of real-time communication...
-                {/* Full description here */}
-              </p>
-            )}
-            {currentProject === 'Untitled App' && (
-              <p>
-                In the realm of mobile development, I am embarking on an exciting journey with an untitled communication app...
-                {/* Full description here */}
-              </p>
-            )}
-          </ModalTemplate>
-        )}
+        <ModalTemplate onClose={() => setIsModalOpen(false)} label={currentProject} visible={isModalOpen}>
+          {/* Content based on currentProject */}
+          {currentProject === 'The Lounge' && (
+            <p>
+              My current endeavor, The Lounge, focuses intensively on harnessing the power of Next.js, TypeScript, and Socket.IO to redefine the landscape of real-time communication...
+              {/* Full description here */}
+            </p>
+          )}
+          {currentProject === 'Untitled App' && (
+            <p>
+              In the realm of mobile development, I am embarking on an exciting journey with an untitled communication app...
+              {/* Full description here */}
+            </p>
+          )}
+        </ModalTemplate>
+      )}
       </div>
     </div>
   )

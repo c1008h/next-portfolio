@@ -16,12 +16,12 @@ export default function ModalTemplate({
   children,
   canClose = true
 }: ModalTemplateProps) {
-  console.log('module is OPENED')
 
   return (
     <Modal 
       onClose={canClose ? onClose : undefined}
       isOpen={visible} 
+      placement={'center'}
     >
       <ModalContent>
         <ModalHeader>{label}</ModalHeader>
