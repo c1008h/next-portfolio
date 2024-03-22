@@ -1,9 +1,32 @@
 import React from 'react'
+import { Modal, ModalContent, ModalHeader, ModalBody } from "@nextui-org/react";
 
-export default function ModalTemplate() {
+interface ModalTemplateProps {
+  label?: string;
+  visible?: boolean;
+  onClose?: () => void;
+  children?: React.ReactNode; 
+  canClose?: boolean;
+}
+
+export default function ModalTemplate({
+  visible,
+  label,
+  onClose,
+  children,
+  canClose = true
+}: ModalTemplateProps) {
+  console.log('module is OPENED')
+
   return (
-    <div>
-      Modal
-    </div>
+    <Modal 
+      onClose={canClose ? onClose : undefined}
+      isOpen={visible} 
+    >
+      <ModalContent>
+        <ModalHeader>{label}</ModalHeader>
+        <ModalBody>{children}</ModalBody>
+      </ModalContent>
+    </Modal>
   )
 }
