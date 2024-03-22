@@ -2,7 +2,7 @@
 import React from 'react'
 import projectData from '@/constants/projectData.json'
 import { FaGithub, FaExternalLinkAlt, FaGlobe } from 'react-icons/fa';
-import { ButtonTemplate } from '@/components';
+import { ButtonTemplate, DropDownTemplate } from '@/components';
 import { useRouter } from 'next/navigation';
 
 export default function Projects() {
@@ -19,9 +19,14 @@ export default function Projects() {
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className='flex flex-row justify-items-start' >
-          <ButtonTemplate title={'<'} action={() => router.back()} btnStyle={'font-bold text-3xl text-left'} />
-          <h2 className="text-3xl font-bold text-left text-gray-800 mb-12">Archive</h2>
+        <div className='flex flex-row justify-between' >
+          <div className='flex flex-row justify-center items-center'>
+            <ButtonTemplate title={'<'} action={() => router.back()} btnStyle={'font-bold text-3xl text-left justify-center items-center text-center'} />
+            <h2 className="text-3xl font-bold text-left text-gray-800 mb-12">Archive</h2>
+          </div>
+          <div>
+            <DropDownTemplate />
+          </div>
         </div>
         <div className="min-w-full align-middle">
           <table className="min-w-full divide-y divide-gray-200">
