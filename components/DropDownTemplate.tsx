@@ -1,8 +1,13 @@
 import React, { useState, useMemo } from 'react'
 import { Button, Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem } from "@nextui-org/react";
 import { Selection } from "@react-types/shared";
+import { ButtonTemplate } from '@/components'
 
-export default function DropDownTemplate() {
+interface DropDownTemplateProps {
+    btnStyle: string;
+}
+
+export default function DropDownTemplate({ btnStyle }: DropDownTemplateProps) {
     const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set(["all"]));
 
     const selectedValue = React.useMemo(() => Array.from(selectedKeys).join(", ").replaceAll("_", " "), [selectedKeys]);
@@ -12,16 +17,20 @@ export default function DropDownTemplate() {
 
         setSelectedKeys(newKeys);
     };
+    const baseClasses = "capitalize";
+    const mergedClasses = `${baseClasses} ${btnStyle || ''}`.trim();
+
 
     return (
         <Dropdown>
             <DropdownTrigger>
                 <Button 
                     variant="bordered" 
-                    className="capitalize"
+                    className={mergedClasses}
                 >
                     {selectedValue || "Select Options"} 
                 </Button>
+                {/* <ButtonTemplate btnStyle={btnStyle} title={selectedValue || "Select Options"}/> */}
             </DropdownTrigger>
             <DropdownMenu 
                 aria-label="Multiple selection example"

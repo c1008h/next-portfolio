@@ -15,20 +15,23 @@ export default function Projects() {
     if (b.year === 'In-Progress') return 1;
     return parseInt(b.year) - parseInt(a.year);
   });
+  
+  const btnStyle="font-bold text-3xl justify-center items-center hover:bg-blue-100 hover:shadow-md"
 
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className='flex flex-row justify-between' >
-          <div className='flex flex-row justify-center items-center'>
-            <ButtonTemplate title={'<'} action={() => router.back()} btnStyle={'font-bold text-3xl text-left justify-center items-center text-center'} />
-            <h2 className="text-3xl font-bold text-left text-gray-800 mb-12">Archive</h2>
+        <div className='flex flex-row justify-between items-center' >
+          <div className='flex flex-row justify-center items-center'> 
+            <ButtonTemplate 
+              title={'<'} 
+              action={() => router.back()} 
+              btnStyle={btnStyle} /> 
+            <h2 className="text-3xl font-bold text-left text-gray-800 mb-0 ml-4">Archive</h2> {/* Added margin-left for spacing */}
           </div>
-          <div>
-            <DropDownTemplate />
-          </div>
+          <DropDownTemplate btnStyle={btnStyle}/>
         </div>
-        <div className="min-w-full align-middle">
+        <div className="min-w-full align-middle my-5">
           <table className="min-w-full divide-y divide-gray-200">
             <thead>
               <tr>
