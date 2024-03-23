@@ -20,6 +20,7 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
     <div 
       ref={ref}
       className="flex flex-col items-center justify-center w-screen h-screen bg-cover bg-center text-center"
+      id='landing'
     >
       <h1 className="text-6xl font-bold text-white">Chris Hong</h1>
       <p className="mt-4 text-xl text-gray-300">Full Stack Developer / Software Developer</p>
