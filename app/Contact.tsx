@@ -1,4 +1,5 @@
 import React from 'react'
+import socialData from '@/constants/socialData.json'
 
 export default function Contact() {
   return (
@@ -8,7 +9,7 @@ export default function Contact() {
       <p className='text-lg text-gray-700 max-w-md text-center mb-8'>
         I’m currently looking for new opportunities...
       </p>
-      <a href="mailto:honggchriss@gmail.com" className='px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-150'>
+      <a href={`mailto:${socialData[0].email}`} className='px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-150'>
         Say Hello
       </a>
     </div>
