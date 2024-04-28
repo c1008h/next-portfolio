@@ -34,7 +34,7 @@
                 "description": "Supported the development team in testing, troubleshooting, and refining the psychotherapy platform. Played a key role in collaborative efforts to enhance platform stability and functionality."
             }
         ],
-        "skills": ["React Native", "React", "Firebase", "Node", "JavaScript", "Next"]
+        "skills": ["React Native", "React", "Firebase", "Node", "JavaScript", "Next", "TypeScript"]
     },
     {
         "id": 2,
