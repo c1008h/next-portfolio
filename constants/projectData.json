@@ -1,4 +1,17 @@
-[       
+[   {
+        "id": 12,
+        "title": "GL-Watchlist",
+        "subtitle": "Next, Firebase, TypeScript, Google Analytics",
+        "description": "Welcome to 'The Lounge - Desktop,' an exclusive platform designed to redefine the way communities interact and engage. Offering a unique blend of privacy and connectivity, it's the ideal space for those who value dynamic, real-time communication in a sophisticated desktop environment. Perfect for groups seeking a tailored interaction space.",
+        "image": "/images/gl-watchlist.png",
+        "website": "https://www.gl-watchlist.com/",
+        "github":"",
+        "link": "",
+        "demo":"",
+        "type":"desktop",
+        "madeAt": "—",
+        "year":"In-Progress"
+    },     
     {
         "id": 11,
         "title": "The Lounge - Desktop",
