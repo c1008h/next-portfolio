@@ -1,4 +1,18 @@
 [   {
+    "id": 12,
+    "title": "Wasabi Dev Studio",
+    "subtitle": "Next, Firebase, TypeScript, Google Analytics",
+    "description": "GL-Watchlist is a comprehensive web platform dedicated to curating and organizing girl-love (GL) content across various media, including series, movies, and music videos. Built with Next.js, Firebase, and TypeScript, this project enables users to effortlessly explore, filter, and stay updated on the latest GL content. The site features user-generated reviews, ratings, and a sophisticated search functionality, all while integrating Google Analytics to track user engagement and improve the overall experience. GL-Watchlist aims to be the go-to resource for fans of GL media, offering a user-friendly and visually appealing interface that enhances content discovery.",
+    "image": "/images/",
+    "website": "",
+    "github":"",
+    "link": "https://www.wasabidevstudio.com/",
+    "demo":"",
+    "type":"web",
+    "madeAt": "—",
+    "year":"In-Progress"
+    },   
+    {
         "id": 12,
         "title": "GL-Watchlist",
         "subtitle": "Next, Firebase, TypeScript, Google Analytics",
