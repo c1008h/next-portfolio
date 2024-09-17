@@ -6,6 +6,8 @@ import { ProjectProps } from '@/interface/ProjectProps'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
+// When change tabs, currently facing an issue that the data is not clearing and displaying the other tab items.
+
 export default function Project() {
     const [activeTab, setActiveTab] = useState<string>('Web');
     const [filteredProjects, setFilteredProjects] = useState<ProjectProps[]>([]);
