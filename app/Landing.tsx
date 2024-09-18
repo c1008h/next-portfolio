@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react'
+import Image from 'next/image'
 import { handleScrollToSection } from '@/utils/scroll'
 import { ButtonTemplate } from '@/components'
+import avatarIcon from '@/public/images/chris-icon.png'
 interface LandingProps {
 }
 
 const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
-  // import Image from 'next/image';
-
 // Inside your CardTemplate component
 {/* <div className={imageClasses} style={{ position: 'relative' }}>
   <Image 
@@ -23,7 +23,20 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
       id='landing'
     >
       <h1 className="text-6xl font-bold text-white">Chris Hong</h1>
-      <p className="mt-4 text-xl text-gray-300">Full Stack Developer / Software Developer</p>
+      <div className='flex flex-row items-center gap-2'>
+        <div className="hover:animate-bounce transition-transform duration-500 ease-in-out">
+          <Image 
+            alt='avatar' 
+            src={avatarIcon} 
+            height={500} 
+            width={500}
+            className="rounded-full"
+            style={{ filter: 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3))' }}
+
+          />
+        </div>
+        <p className="mt-4 text-xl text-gray-300">Software Engineer</p>
+      </div>
       <div className="mt-6">
         <ButtonTemplate 
           title={"Contact Me"}
