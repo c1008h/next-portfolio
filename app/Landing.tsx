@@ -35,7 +35,7 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
 
           />
         </div>
-        <p className="mt-4 text-xl text-gray-300">Software Engineer</p>
+        <p style={{ filter: 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3))' }} className="mt-4 text-xl font-extrabold leading-7 text-gray-300 font-mono">Software Engineer</p>
       </div>
       <div className="mt-6">
         <ButtonTemplate 
