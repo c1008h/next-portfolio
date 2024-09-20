@@ -19,12 +19,13 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
   return (
     <div 
       ref={ref}
-      className="flex flex-col items-center justify-center w-screen h-screen bg-cover bg-center text-center"
+      className="flex flex-col items-center justify-center w-screen h-screen bg-gradient-to-br from-[#A1CDF4] to-[#B5B1B2] text-center"
+
+      // className="flex flex-col items-center justify-center w-screen h-screen bg-cover bg-center text-center"
       id='landing'
     >
-      <h1 className="text-6xl font-bold text-white">Chris Hong</h1>
-      <div className='flex flex-row items-center gap-2'>
-        <div className="hover:animate-bounce transition-transform duration-500 ease-in-out">
+      <div className='flex flex-row justify-center items-center gap-2'>
+        <div className="animate-float transition-transform duration-700 ease-in-out">
           <Image 
             alt='avatar' 
             src={avatarIcon} 
@@ -35,12 +36,19 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
 
           />
         </div>
-        <p style={{ filter: 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3))' }} className="mt-4 text-xl font-extrabold leading-7 text-gray-300 font-mono">Software Engineer</p>
+        <div 
+          className="transition-all duration-700 ease-in-out transform hover:scale-105 animate-fade-in"
+          style={{ filter: 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3))' }}
+        >
+          <h1 className="text-6xl font-extrabold font-mono text-white">Chris Hong</h1>
+          <p  className="mt-4 text-2xl font-extrabold leading-7 text-slate-100 font-mono">Software Engineer</p>
+        </div>
+
       </div>
       <div className="mt-6">
         <ButtonTemplate 
           title={"Contact Me"}
-          btnStyle={"mt-8 px-6 py-3 bg-blue-500 text-white rounded-full shadow hover:bg-blue-700 transition duration-300"}
+          btnStyle="mt-8 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full shadow hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
           action={() => handleScrollToSection('contact')}
         />
       </div>
