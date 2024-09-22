@@ -24,7 +24,7 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
       // className="flex flex-col items-center justify-center w-screen h-screen bg-cover bg-center text-center"
       id='landing'
     >
-      <div className='flex flex-row justify-center items-center gap-2'>
+      <div className='flex flex-row justify-center items-center m-2'>
         <div className="animate-float transition-transform duration-700 ease-in-out">
           <Image 
             alt='avatar' 
@@ -40,10 +40,16 @@ const Landing = forwardRef<HTMLDivElement, LandingProps>((props, ref) => {
           className="transition-all duration-700 ease-in-out transform hover:scale-105 animate-fade-in"
           style={{ filter: 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3))' }}
         >
-          <h1 className="text-6xl font-extrabold font-mono text-white">Chris Hong</h1>
-          <p  className="mt-4 text-2xl font-extrabold leading-7 text-slate-100 font-mono">Software Engineer</p>
-        </div>
+          <p  className="mt-4 text-2xl font-extrabold leading-7 text-slate-100 font-mono">Hi! My name is</p>
 
+          <h1 className="text-6xl font-extrabold font-mono text-white">Chris Hong</h1>
+          <div className='text-left'>
+            <p  className="mt-4 text-l font-extrabold leading-7 text-slate-100 font-mono">
+              I am a 
+              <span className='text-white text-xl font-extrabold leading-7 font-mono'> Software Engineer </span>
+            from Seattle, Washington with years of experience in developing and designing user centric web applications.</p>
+          </div>
+        </div>
       </div>
       <div className="mt-6">
         <ButtonTemplate 
