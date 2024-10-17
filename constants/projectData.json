@@ -1,19 +1,20 @@
-[   {
-    "id": 12,
-    "title": "Wasabi Dev Studio",
-    "subtitle": "Next, Firebase, TypeScript, Google Analytics",
-    "description": "Wasabi Dev Studios",
-    "image": "/images/",
-    "website": "",
-    "github":"",
-    "link": "https://www.wasabidevstudio.com/",
-    "demo":"",
-    "type":"web",
-    "madeAt": "—",
-    "year":"In-Progress"
+[   
+    {
+        "id": 14,
+        "title": "Wasabi Dev Studio",
+        "subtitle": "Next, Firebase, TypeScript, Google Analytics",
+        "description": "Wasabi Dev Studios",
+        "image": "/images/wasabidevstudio.png",
+        "website": "",
+        "github":"",
+        "link": "https://www.wasabidevstudio.com/",
+        "demo":"",
+        "type":"web",
+        "madeAt": "—",
+        "year":"In-Progress"
     },   
     {
-        "id": 12,
+        "id": 13,
         "title": "GL-Watchlist",
         "subtitle": "Next, Firebase, TypeScript, Google Analytics",
         "description": "GL-Watchlist is a comprehensive web platform dedicated to curating and organizing girl-love (GL) content across various media, including series, movies, and music videos. Built with Next.js, Firebase, and TypeScript, this project enables users to effortlessly explore, filter, and stay updated on the latest GL content. The site features user-generated reviews, ratings, and a sophisticated search functionality, all while integrating Google Analytics to track user engagement and improve the overall experience. GL-Watchlist aims to be the go-to resource for fans of GL media, offering a user-friendly and visually appealing interface that enhances content discovery.",
@@ -24,10 +25,10 @@
         "demo":"",
         "type":"web",
         "madeAt": "—",
-        "year":"In-Progress"
+        "year":"2024 - Present"
     },     
     {
-        "id": 11,
+        "id": 12,
         "title": "The Lounge - Desktop",
         "subtitle": "Electron, Next, Firebase, Node, SocketIO",
         "description": "Welcome to 'The Lounge - Desktop,' an exclusive platform designed to redefine the way communities interact and engage. Offering a unique blend of privacy and connectivity, it's the ideal space for those who value dynamic, real-time communication in a sophisticated desktop environment. Perfect for groups seeking a tailored interaction space.",
@@ -41,7 +42,7 @@
         "year":"In-Progress"
     }, 
     {
-        "id": 10,
+        "id": 11,
         "title": "The Lounge - Web",
         "subtitle": "Next, Firebase, Node, SocketIO",
         "description": "Discover 'The Lounge - Web,' where community engagement meets modern convenience. This platform offers a seamless web-based experience for users seeking interactive, real-time communication. It's crafted for communities, teams, and groups who desire a flexible, accessible space to come together online.",
@@ -55,7 +56,7 @@
         "year":"In-Progress"
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "Untitled Messaging Service",
         "subtitle": "React Native, Firebase, Node, AWS, openAI, JavaScript, SocketIO, Figma",
         "description": "Embark on the next generation of communication with our Untitled Messaging Service. This platform breaks new ground with features that blend privacy, intuitive design, and AI-driven functionality, offering a messaging experience that's both personal and expansive.",
@@ -69,7 +70,7 @@
         "year":"In-Progress"
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "WalletWize",
         "subtitle": "React Native, TypeScript, APIs, Figma",
         "description": "As a contributor to the WalletWize app, I helped shape a financial management tool that empowers users to take control of their finances directly from their phones. WalletWize simplifies budgeting, spending tracking, and financial planning, making it easier for users to achieve their financial goals.",
@@ -80,12 +81,26 @@
         "demo":"",
         "type":"mobile",
         "madeAt": "Revent Solutions",
-        "year":"2024"
+        "year":"2024 - 2024"
+    },
+    {
+        "id": 8,
+        "title": "Reflectica Dashboard",
+        "subtitle": "Next, TypeScript, Figma",
+        "description": "In the early stages of Reflectica, I contributed to developing a psychotherapy platform aimed at fostering personal growth and self-reflection. Designed to support users on their journey towards mental well-being, Reflectica combines the convenience of a phone app with the depth of psychotherapeutic techniques.",
+        "image": "/images/reflectica.png",
+        "website": "https://www.linkedin.com/company/reflecticaai/about/",
+        "github":"",
+        "link": "",
+        "demo":"",
+        "type":"web",
+        "madeAt": "Reflectica AI",
+        "year":"In-Progress"
     },
     {
         "id": 7,
-        "title": "Reflectica",
-        "subtitle": "React Native, Node, JavaScript, Figma",
+        "title": "Reflectica Phone Application",
+        "subtitle": "React Native, Node, JavaScript, TypeScript, Figma",
         "description": "In the early stages of Reflectica, I contributed to developing a psychotherapy platform aimed at fostering personal growth and self-reflection. Designed to support users on their journey towards mental well-being, Reflectica combines the convenience of a phone app with the depth of psychotherapeutic techniques.",
         "image": "/images/reflectica.png",
         "website": "https://www.linkedin.com/company/reflecticaai/about/",
@@ -106,7 +121,7 @@
         "link": "https://pefi.netlify.app",
         "demo": "/demo/PeFi.gif",
         "type":"web",
-        "year":"2023",
+        "year":"2023 - 2023",
         "madeAt":"—"
     },
     {
@@ -119,7 +134,7 @@
         "link": "https://thefoodgenie.netlify.app",
         "demo": "/demo/FoodGenie.gif",
         "type":"web",
-        "year":"2022",
+        "year":"2022 - 2023",
         "madeAt":"—"
 
     },
@@ -133,7 +148,7 @@
         "link": "",
         "demo": "",
         "type":"web",
-        "year":"2022",
+        "year":"2022 - 2024",
         "madeAt":"—"
 
     },
@@ -148,7 +163,7 @@
         "demo":"/demo/doghub.gif",
         "type":"web",
         "madeAt": "University of Washington",
-        "year":"2022"
+        "year":"2022 - 2022"
     },
     {
         "id": 2,
@@ -160,7 +175,7 @@
         "demo": "/demo/ecombackend.gif",
         "type":"web",
         "madeAt": "University of Washington",
-        "year":"2022"
+        "year":"2022 - 2022"
     },
     {
         "id": 1,
@@ -172,7 +187,7 @@
         "link": "https://c1008h.github.io/Snake-Game/",
         "demo": "/demo/SnakeGame.gif",
         "type":"web",
-        "year":"2023",
+        "year":"2023 - 2023",
         "madeAt":"—"
 
     }

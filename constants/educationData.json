@@ -1,5 +1,19 @@
 [
     {
+        "id": 3,
+        "year": "2025",
+        "yearRange": "2025 - TBD",
+        "roles": [
+            {
+                "title": "Master's Degree",
+                "description": "MS in Computer Science"
+
+            }
+        ],
+        "name": "Georgia Institute of Technology",
+        "skills": ["Java", "Python", "SQL"]
+    },
+    {
         "id": 2,
         "year": "2022",
         "yearRange": "2022 - 2022",
