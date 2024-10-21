@@ -23,7 +23,7 @@ export default function Project() {
         setFilteredProjects(newFilteredProjects)
     }, [activeTab]); 
 
-    const toggleShowBtn = () => setIsViewMoreClicked(!isViewMoreClicked)
+    // const toggleShowBtn = () => setIsViewMoreClicked(!isViewMoreClicked)
 
     const btnBaseStyle = 'border px-4 py-2 text-sm font-medium leading-5 transition-colors duration-150 rounded-lg focus:outline-none';
     const btnActiveStyle = 'border-blue-500 text-blue-700 bg-blue-100';
@@ -38,6 +38,11 @@ export default function Project() {
             setActiveTab(title)
         }
     }
+
+    const handleViewMoreClick = () => {
+        router.push(`/archive?tab=${activeTab}`);
+    }
+
     return (
         <div className='flex flex-col items-center py-16' id='projects'>
             <h1 className="text-4xl font-bold text-gray-800 mb-8">
@@ -65,7 +70,7 @@ export default function Project() {
             {activeTab !== 'All' && filteredProjects.length !== 0 && (
                 <ButtonTemplate 
                     btnStyle="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                    action={toggleShowBtn} 
+                    action={handleViewMoreClick} 
                     title={!isViewMoreClicked ? 'View More' : 'View Less'}
                 />
             )} 

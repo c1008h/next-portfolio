@@ -5,18 +5,25 @@ import { ButtonTemplate } from '@/components'
 
 interface DropDownTemplateProps {
     btnStyle: string;
+    selectedKeys: Set<string>; 
+    onSelectionChange: (selection: Set<string>) => void;
 }
 
-export default function DropDownTemplate({ btnStyle }: DropDownTemplateProps) {
-    const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set(["all"]));
-
-    const selectedValue = React.useMemo(() => Array.from(selectedKeys).join(", ").replaceAll("_", " "), [selectedKeys]);
+export default function DropDownTemplate({ btnStyle, selectedKeys, onSelectionChange }: DropDownTemplateProps) {
+    const selectedValue = useMemo(() => {
+        if (selectedKeys.has("all")) return "All"; // Prioritize "All" when selected
+        return Array.from(selectedKeys).join(", ").replaceAll("_", " ");
+    }, [selectedKeys]);
 
     const handleSelectionChange = (selection: Selection) => {
-        let newKeys = new Set<string>();
-
-        setSelectedKeys(newKeys);
+        const newKeys = new Set(selection as Set<string>);
+        if (newKeys.has("all")) {
+            onSelectionChange(new Set(["all"]));  // Reset to "All" when it's selected
+        } else {
+            onSelectionChange(newKeys);  // Update parent state
+        }
     };
+
     const baseClasses = "capitalize";
     const mergedClasses = `${baseClasses} ${btnStyle || ''}`.trim();
 
