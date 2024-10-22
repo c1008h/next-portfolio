@@ -13,6 +13,7 @@ export default function Projects() {
   const tab = searchParams.get('tab') || 'all';
 
   // Currently, the tabs don't filter the archieve page when clicked
+  // Also when different tabs are clicked, the items on the main page is not showing the filtered items correctly
   useEffect(() => {
     const newFilteredProjects = tab === 'all'
       ? projectData
